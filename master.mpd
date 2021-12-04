@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generated with https://github.com/google/shaka-packager version v2.6.1-634af65-release-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" xmlns:cenc="urn:mpeg:cenc:2013" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" minBufferTime="PT2S" type="static" mediaPresentationDuration="PT95.01100158691406S">
+  <Period id="0">
+    <AdaptationSet id="0" contentType="audio" subsegmentAlignment="true">
+      <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b" cenc:default_KID="37bf72f5-b581-6028-5bac-d3a875566db0">
+        <cenc:pssh>AAAANHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAE3v3L1tYFgKFus06h1Vm2wAAAAAA==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="0" bandwidth="107591" codecs="opus" mimeType="audio/webm" audioSamplingRate="48000">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+        <BaseURL>zaud.webm</BaseURL>
+        <SegmentBase indexRange="377-641" timescale="1000000" presentationTimeOffset="3000">
+          <Initialization range="0-376"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="1" contentType="video" width="1280" height="720" frameRate="1000000/42000" subsegmentAlignment="true" par="16:9">
+      <ContentProtection schemeIdUri="urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b" cenc:default_KID="37bf72f5-b581-6028-5bac-d3a875566db0">
+        <cenc:pssh>AAAANHBzc2gBAAAAEHfv7MCyTQKs4zweUuL7SwAAAAE3v3L1tYFgKFus06h1Vm2wAAAAAA==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="1" bandwidth="1239472" codecs="av01.0.05M.08" mimeType="video/webm" sar="1:1">
+        <BaseURL>zvid.webm</BaseURL>
+        <SegmentBase indexRange="366-614" timescale="1000000">
+          <Initialization range="0-365"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
